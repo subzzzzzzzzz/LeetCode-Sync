@@ -165,7 +165,7 @@ When you switch to a different laptop (e.g., between work and personal computers
 > *"You haven't submitted any code"*
 
 <p align="center">
-  <img width="416" height="154" alt="retrieve-last-submitted-code" src="https://github.com/user-attachments/assets/b0a96be9-f7e7-4199-a6a3-b9898062b32e" />
+  <img width="1026" height="79" alt="Screenshot 2026-11-11 at 11 24 32 PM" src="https://github.com/user-attachments/assets/0d8b2718-1d05-4262-b5df-b4ac66767474" />
 </p>
 
 ### How LeetCode Sync fixes this
