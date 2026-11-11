@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Subrahmanya Bhat A
+// SPDX-License-Identifier: MIT
+
 const fields = ["owner", "repo", "branch", "token"];
 const checks = ["autoSync"];
 const defaults = { owner: "", repo: "", branch: "", token: "", autoSync: true };

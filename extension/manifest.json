@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "LeetCode Sync",
   "version": "1.0.0",
+  "author": "Subrahmanya Bhat A",
   "description": "Saves every LeetCode problem you solve to a GitHub repository, sorted by topic.",
   "permissions": [
     "storage"

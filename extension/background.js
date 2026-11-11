@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Subrahmanya Bhat A
+// SPDX-License-Identifier: MIT
+
 import { STATE_PATH, applySubmissions, emptyState, indexFiles, planSync } from "./layout.js";
 
 const API = "https://api.github.com";

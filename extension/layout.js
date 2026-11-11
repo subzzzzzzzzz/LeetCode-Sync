@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Subrahmanya Bhat A
+// SPDX-License-Identifier: MIT
+
 // Layout of the solutions repo: which folder each problem lives in and what
 // every README says. background.js only moves the files built here to GitHub.
 //

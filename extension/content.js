@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Subrahmanya Bhat A
+// SPDX-License-Identifier: MIT
+
 // Bridges page_hook.js (page world) and background.js. It saves each judged
 // submission, runs history syncs (the full import and the catch-up that runs
 // when LeetCode opens), and shows a small toast on the page with the result.
@@ -99,7 +102,7 @@ async function listSubmissions(stopAt, onPage) {
   const listed = [];
   let offset = 0;
   let lastKey = null;
-  for (;;) {
+  for (; ;) {
     const page = (await graphql(SUBMISSION_LIST_QUERY, { offset, limit: 20, lastKey })).submissionList;
     for (const item of page.submissions) {
       const id = Number(item.id);
@@ -128,7 +131,7 @@ async function runSync(full, { quiet = false } = {}) {
   let loud = !quiet;
   const progress = (text) => {
     if (loud) toast(text, "info");
-    chrome.runtime.sendMessage({ type: "sync-progress", text }).catch(() => {});
+    chrome.runtime.sendMessage({ type: "sync-progress", text }).catch(() => { });
   };
 
   try {
@@ -219,7 +222,7 @@ async function runSync(full, { quiet = false } = {}) {
     await send({ type: "sync-end", ok: true, text, url, problems: plan.slugs.length });
     if (loud) toast(`${text}.`, "success", url);
   } catch (error) {
-    await chrome.runtime.sendMessage({ type: "sync-end", ok: false, text: error.message }).catch(() => {});
+    await chrome.runtime.sendMessage({ type: "sync-end", ok: false, text: error.message }).catch(() => { });
     if (loud) toast(`Sync failed: ${error.message}`, "error");
   } finally {
     syncing = false;

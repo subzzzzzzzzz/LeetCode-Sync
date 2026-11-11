@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Subrahmanya Bhat A
+// SPDX-License-Identifier: MIT
+
 // Runs in the page itself (world: MAIN) so it can see LeetCode's own network
 // requests. When a submission is judged (Accepted or not), it gathers the code
 // and problem details and hands them to content.js via postMessage. It also
@@ -174,7 +177,7 @@
           .clone()
           .json()
           .then((json) => inspect(url, body, json))
-          .catch(() => {});
+          .catch(() => { });
       }
     } catch {
       // Never break LeetCode's own requests.

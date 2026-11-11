@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Subrahmanya Bhat A
+// SPDX-License-Identifier: MIT
+
 const list = document.getElementById("history");
 const target = document.getElementById("target");
 const syncStatus = document.getElementById("sync-status");
