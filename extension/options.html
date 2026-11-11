@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LeetCode Sync settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="options">
+  <div class="brand-header">
+    <img src="icons/icon-48.png" width="48" height="48" alt="LeetCode Sync logo">
+    <div>
+      <h1>LeetCode Sync</h1>
+      <p class="muted">Saves every LeetCode problem you solve to a GitHub repository, sorted by topic.</p>
+    </div>
+  </div>
+
+  <label>GitHub username
+    <input id="owner" placeholder="your_github_username" autocomplete="off">
+  </label>
+  <label>Repository
+    <input id="repo" placeholder="your_repository_name" autocomplete="off">
+  </label>
+  <label>Branch <span class="muted">(leave blank to use your default branch)</span>
+    <input id="branch" placeholder="main" autocomplete="off">
+  </label>
+  <label>GitHub token
+    <input id="token" type="password" placeholder="github_personal_access_token" autocomplete="off">
+  </label>
+  <p class="muted small">
+    <a href="https://github.com/settings/personal-access-tokens/new" target="_blank">Create a token</a>:
+    <b>Only select repositories</b> &gt; your solutions repo, then <b>+ Add permissions</b> &gt;
+    <b>Contents</b> &gt; <b>Read and write</b>. The token is stored only in this browser.
+  </p>
+
+  <label class="check">
+    <input id="autoSync" type="checkbox">
+    Catch up automatically when I open LeetCode (picks up problems solved on another device)
+  </label>
+
+  <div class="row">
+    <button id="save">Save</button>
+    <button id="test" class="secondary">Test connection</button>
+  </div>
+  <p id="status"></p>
+
+  <script src="options.js"></script>
+</body>
+
+</html>
