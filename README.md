@@ -13,10 +13,14 @@
   <a href="https://github.com/subzzzzzzzzz/LeetCode-Sync/archive/refs/heads/main.zip">
     <img src="https://img.shields.io/badge/Download-ZIP-ffa116?style=for-the-badge" alt="Download ZIP">
   </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License: MIT">
+  </a>
 </p>
 
 - **Every accepted solution is saved** the moment LeetCode judges it.
 - **One-click import** of your whole LeetCode history, including your code.
+- **Cross-device solution recovery:** Access and restore your past solutions on any laptop or browser without needing LeetCode Premium.
 - **Sorted by topic:** each problem goes in a folder for its main topic (Array, String,
   Dynamic Programming, ...). SQL problems go in **Database**.
 - **A dashboard README** with your totals, problems you haven't solved yet, recent activity and
@@ -30,7 +34,7 @@ A repo like [subzzzzzzzzz/LeetCode-submissions](https://github.com/subzzzzzzzzz/
 in automatically:
 
 <p align="center">
-  <<img width="1239" height="736" alt="solutions-repo" src="https://github.com/user-attachments/assets/918e1177-5ff9-4d2d-9616-20236f77c94c" />
+  <img width="1239" height="736" alt="solutions-repo" src="https://github.com/user-attachments/assets/918e1177-5ff9-4d2d-9616-20236f77c94c" />
 </p>
 
 ```
@@ -151,6 +155,33 @@ There's nothing to do. Solve problems as usual:
 
 The popup shows your recent saves. If one failed (for example, you were offline), click **Retry**.
 
+## Retrieve your code on any laptop (No Premium needed)
+
+### The Problem
+If you don't have a paid **LeetCode Premium** subscription, LeetCode does **not** sync your in-editor submission history across different machines. It only saves submissions inside the local browser memory (storage) of the exact laptop you solved them on.
+
+When you switch to a different laptop (e.g., between work and personal computers) and open a problem you previously solved, clicking the **"Retrieve last submitted code"** button (`{}`) in the LeetCode editor shows:
+
+> *"You haven't submitted any code"*
+
+<p align="center">
+  <img width="416" height="154" alt="retrieve-last-submitted-code" src="https://github.com/user-attachments/assets/b0a96be9-f7e7-4199-a6a3-b9898062b32e" />
+</p>
+
+### How LeetCode Sync fixes this
+With **LeetCode Sync**, you don't need a Premium subscription to keep your code accessible across computers:
+
+1. **Install the extension** on your other laptop or new browser and connect your repository in Settings.
+2. Log in to [leetcode.com](https://leetcode.com).
+3. Click the extension icon and click **Import full history**.
+
+<p align="center">
+  <img width="690" height="360" alt="import-full-history" src="https://github.com/user-attachments/assets/1fbe1470-df50-4842-a8dc-96c8ab44ac63" />
+</p>
+
+4. All your submission history synced to GitHub is read and synced into your browser session.
+5. Whenever you revisit any problem on that laptop, click the **Retrieve last submitted code** (`{}`) button in the editor toolbar, and your previously accepted solution will load right into the editor!
+
 ## Settings
 
 | Setting | What it does |
@@ -180,3 +211,9 @@ icon on **LeetCode Sync**. Your settings are kept.
 
 Your GitHub token is stored only in this browser's extension storage. The extension talks only to
 `leetcode.com` (to read your own submissions) and `api.github.com` (to save them to your repo).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Copyright (c) 2026 Subrahmanya Bhat. All rights reserved.
