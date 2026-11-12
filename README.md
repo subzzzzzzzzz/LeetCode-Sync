@@ -34,7 +34,8 @@ A repo like [subzzzzzzzzz/LeetCode-submissions](https://github.com/subzzzzzzzzz/
 in automatically:
 
 <p align="center">
-  <img width="1239" height="736" alt="solutions-repo" src="https://github.com/user-attachments/assets/918e1177-5ff9-4d2d-9616-20236f77c94c" />
+  <img width="1600" height="8640" alt="screencapture-github-subzzzzzzzzz-Leetcode-submissions-2026-11-12-14_26_25" src="https://github.com/user-attachments/assets/64047ec3-70a3-4865-ac43-df52ecca4b75" />
+
 </p>
 
 ```
